@@ -82,8 +82,7 @@ namespace CSharpBasics
 
             Console.WriteLine("Student name is {0} and father name is {1}. {0} is {2} and his roll number is {3}.",studentName,fatherName,gender,rollNumber);
 
-                */
-            //
+             
 
             Console.WriteLine("Please enter marks of Islam : ");
             int Islam  = Convert.ToInt32(Console.ReadLine());
@@ -201,27 +200,10 @@ namespace CSharpBasics
             }
 
 
+          
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
             if (Zeeshan > Haider)
             {
                 Console.WriteLine("Zeeshan is at Second Position.");
@@ -255,6 +237,109 @@ namespace CSharpBasics
                 Console.WriteLine("Haider is at Second Position.");
                 Console.WriteLine("Islam is at third position.");
             }
+
+ 
+
+
+            // switch
+
+            // vowels aeiou
+
+            Console.WriteLine("Please enter a character ? ");
+            string character = Console.ReadLine();
+
+            switch (character)
+            {
+                case "e":
+                case "i":
+                case "o":
+                case "u":
+                case "a":
+                    Console.WriteLine("Entered character is vowel.");
+                    break;
+
+                default:
+                    Console.WriteLine("Entered character is not a vowel.");
+                    break;
+            }
+
+            Console.WriteLine("Please enter first number ");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter second number .");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Which operation do you want to perform (Press : +,-,*,/,%)");
+            string opp = Console.ReadLine();
+
+            switch (opp)
+            {
+                case "+":
+                    Console.WriteLine(firstNumber + secondNumber);
+                    break;
+
+                case "-":
+                    Console.WriteLine(firstNumber - secondNumber);
+                    break;
+
+                case "*":
+                    Console.WriteLine(firstNumber * secondNumber);
+                    break;
+
+                case "/":
+                    Console.WriteLine(firstNumber / secondNumber);
+                    break;
+
+                case "%":
+                    Console.WriteLine(firstNumber % secondNumber);
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid operation, please enter a valid operator.");
+                    break;
+            }
+
+         */
+
+
+            Console.WriteLine("Please enter first number ");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter second number .");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Which operation do you want to perform (Press : 1 for Sum, 2 For Subtract)");
+            int opp = Convert.ToInt32(Console.ReadLine());
+
+            switch (opp)
+            {
+                case 1:
+                    Console.WriteLine(firstNumber + secondNumber);
+                    break;
+
+                case 2:
+                    Console.WriteLine(firstNumber - secondNumber);
+                    break;
+
+                case 3:
+                    Console.WriteLine(firstNumber * secondNumber);
+                    break;
+
+                case 4:
+                    Console.WriteLine(firstNumber / secondNumber);
+                    break;
+
+                case 5:
+                    Console.WriteLine(firstNumber % secondNumber);
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid operation, please enter a valid operator.");
+                    break;
+            }
+
             Console.ReadKey();
         }
     }
