@@ -199,11 +199,6 @@ namespace CSharpBasics
                 }
             }
 
-
-          
-
-
-            
             if (Zeeshan > Haider)
             {
                 Console.WriteLine("Zeeshan is at Second Position.");
@@ -300,9 +295,6 @@ namespace CSharpBasics
                     break;
             }
 
-         */
-
-
             Console.WriteLine("Please enter first number ");
             int firstNumber = Convert.ToInt32(Console.ReadLine());
 
@@ -339,6 +331,190 @@ namespace CSharpBasics
                     Console.WriteLine("Invalid operation, please enter a valid operator.");
                     break;
             }
+
+  
+            int Ali, Haider, Zeeshan, Faizan, Raouf;
+
+            Console.WriteLine("Please enter marks of Ali : ");
+            Ali = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter marks of Haider : ");
+            Haider = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter marks of Zeeshan : ");
+            Zeeshan = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter marks of Faizan : ");
+            Faizan = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter marks of Raouf : ");
+            Raouf = Convert.ToInt32(Console.ReadLine());
+
+
+            // int Ali, Haider, Zeeshan, Faizan, Raouf;
+
+            if(Ali > Haider && Ali >Zeeshan && Ali > Faizan && Ali > Raouf)
+            {
+                Console.WriteLine("Ali is at first Position.");
+
+                // second | third | fourth | fifth
+
+                if(Haider > Zeeshan && Haider > Faizan && Haider > Raouf)
+                {
+                    Console.WriteLine("Haider is at Second Position.");
+
+                    // third | fourth | fifth
+
+                    if(Zeeshan > Faizan && Zeeshan > Raouf)
+                    {
+                        Console.WriteLine("Zeeshan is at Third Position.");
+
+                        // fourth | fifth
+
+                        if(Faizan > Raouf)
+                        {
+                            Console.WriteLine("Faizan is at Fourth Position.");
+                            Console.WriteLine("Raouf is at Fifth Position.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Raouf is at Fourth Position.");
+                            Console.WriteLine("Faizan is at Fifth Position.");
+                        }
+                    }
+                    else if(Faizan > Zeeshan && Faizan > Raouf)
+                    {
+                        Console.WriteLine("Faizan is at Third Position.");
+
+                        // Fourth | Fifth
+                        if (Zeeshan > Raouf)
+                        {
+                            Console.WriteLine("Zeeshan is at Fourth Position.");
+                            Console.WriteLine("Raouf is at Fifth Position.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Raouf is at Fourth Position.");
+                            Console.WriteLine("Zeeshan is at Fifth Position.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Raouf is at Third Position.");
+
+                        // Fourth | Fifth
+                        if (Zeeshan > Faizan)
+                        {
+                            Console.WriteLine("Zeeshan is at Fourth Position.");
+                            Console.WriteLine("Faizan is at Fifth Position.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Faizan is at Fourth Position.");
+                            Console.WriteLine("Zeeshan is at Fifth Position.");
+                        }
+                    }
+
+                }
+                else if(Zeeshan > Haider && Zeeshan > Faizan && Zeeshan > Raouf)
+                {
+                    Console.WriteLine("Zeeshan is at Second Position.");
+
+
+                }
+                else if(Faizan > Zeeshan && Faizan > Haider && Faizan > Raouf)
+                {
+                    Console.WriteLine("Faizan is at Second Position.");
+
+                }
+                else
+                {
+                    Console.WriteLine("Raouf is at Second Position.");
+
+                }
+            }
+            else if(Haider > Ali && Haider > Zeeshan && Haider > Faizan && Haider > Raouf)
+            {
+                Console.WriteLine("Haider is at first Position.");
+            }
+            else if(Zeeshan > Ali && Zeeshan > Haider && Zeeshan > Faizan && Zeeshan > Raouf)
+            {
+                Console.WriteLine("Zeeshan is at first Position.");
+            }
+            else if(Faizan > Ali && Faizan > Haider && Faizan > Zeeshan && Faizan > Raouf)
+            {
+                Console.WriteLine("Faizan is at first Position.");
+            }
+            else
+            {
+                Console.WriteLine("Raouf is at first Position.");
+            }
+
+      */
+
+
+
+
+
+
+
+
+
+            Console.WriteLine("Enter Ali marks");
+            int ali = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter khan Marks");
+            int khan = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Amjad marks");
+            int amjad = Convert.ToInt32(Console.ReadLine());
+
+            if (ali > khan && ali > amjad)
+            {
+                Console.Write("Ali is at first position");
+
+                if (khan > amjad)
+                { 
+                    Console.Write("khan is at second position");
+                    Console.WriteLine("Amjad is at third position");
+                }
+                else
+                {
+                    Console.WriteLine("Amjad is at second position");
+                    Console.WriteLine("khan is at third position");
+                }
+            }
+            else if( khan > ali && khan > amjad)
+            {
+                Console.WriteLine("khan is at first position");
+                if(ali > amjad)
+                {
+                    Console.WriteLine("ali is at second position");
+                    Console.WriteLine("amjad is at third position");
+                }
+                else
+                {
+                    Console.WriteLine("amjad is at second position");
+                    Console.WriteLine("ali is at third position");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("amjad is at first position");
+            }
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             Console.ReadKey();
         }
