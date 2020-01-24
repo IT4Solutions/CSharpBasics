@@ -52,7 +52,8 @@ namespace CSharpBasics
             string password;
 
             Console.WriteLine("Please enter your User Name:");
-            userName = Console.ReadLine();
+            userName = Console.ReadLine();.
+
             Console.WriteLine("Please enter your Password:");
             password = Console.ReadLine();
 
@@ -450,16 +451,6 @@ namespace CSharpBasics
                 Console.WriteLine("Raouf is at first Position.");
             }
 
-      */
-
-
-
-
-
-
-
-
-
             Console.WriteLine("Enter Ali marks");
             int ali = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter khan Marks");
@@ -501,16 +492,142 @@ namespace CSharpBasics
             {
                 Console.WriteLine("amjad is at first position");
             }
-           
+    
+      
+            // Iterations (Loops) For Loop, While Loop, Do While Loop, Foreach Loop
 
 
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Number : {0}",i);
+            }
+
+            
+            // Table 2 * 1 = 2   
+
+            Console.WriteLine("Please enter a number to print table ? ");
+            int tableNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter a limit for table ? ");
+            int limit = Convert.ToInt32(Console.ReadLine());
+
+            int index = 1;
+            while(index <= limit)
+            {
+                Console.WriteLine("{0}  x  {1}   =   {2}",tableNumber,index,tableNumber * index);
+                index++;
+            }
+
+   
+
+            // Table 2 * 1 = 2   
+
+            Console.WriteLine("Please enter a number to print table ? ");
+            int tableNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter a limit for table ? ");
+            int limit = Convert.ToInt32(Console.ReadLine());
+
+            int index = 1;
+            do
+            {
+                Console.WriteLine("{0}  x  {1}   =   {2}", tableNumber, index, tableNumber * index);
+                index++;
+            }
+            while (index <= limit);
+
+            for (int i = 0; i < length; i++)
+            {
+
+            }
+
+            while (true)
+            {
+
+            }
 
 
+    
+            // indexes = 0,1,2,3,4 0  1  2  3  4
+            int[] rollNumbers =  { 45,65,78,96,45};
+
+            Console.WriteLine(rollNumbers[0]);
+
+            Console.WriteLine(rollNumbers.Min());
+            Console.WriteLine(rollNumbers.Max());
+            Console.WriteLine(rollNumbers.Count());
+            Console.WriteLine(rollNumbers.Contains(65));
+            Console.WriteLine(rollNumbers.Average());
+            Console.WriteLine(rollNumbers.Reverse());
+            Console.WriteLine(rollNumbers.Sum());
 
 
+            string[] employees = new string[10] { "Raouf","Ahmed","Ali","Abdullah","Riaz","Raheem","Razzaq","Ayaan","Muhammad Ahmed","Abid Ali"};
 
 
+            if(employees.Contains("Abdullahh") && employees.Contains("Raheem"))
+            {
+                Console.WriteLine("Both brothers are present in the JOB.");
+            }
+            else
+            {
+                Console.WriteLine("One / Both of them are not present in the class.");
+            }
 
+
+            for (int i = 0; i < employees.Count(); i++)
+            {
+                Console.WriteLine("{0} is Present",employees[i]);
+            }
+
+            foreach (string employeeName in employees)
+            {
+                Console.WriteLine("{0} is Present",employeeName);
+            }
+
+     
+
+            decimal sum = 0.0m;
+
+            foreach (int item in marks)
+            {
+                sum = sum + item;
+            }
+
+            Console.WriteLine("Sum of marks is {0}",sum);
+
+
+  
+            int[] marks = { 456, 665, 448, 55, 686, 55, 66, 88, 66, 88, 77, 88, 99 };
+
+            int min = marks[0];
+
+            for(int i = 1; i < marks.Count(); i++)
+            {
+                if (marks[i] < min)
+                {
+                    min = marks[i];
+                }   
+            }
+
+
+      */
+
+
+            string[] employes = { "zeeshan","haider","ali" };
+            Console.WriteLine("Which Employe you want");
+            string name = Console.ReadLine();
+
+            if (employes.Contains(name))
+            {
+                Console.WriteLine("employ found");
+            
+            }
+            else
+            {
+                Console.WriteLine("employ is not found sorry");
+            }
+        
 
 
 
