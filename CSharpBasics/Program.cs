@@ -610,10 +610,6 @@ namespace CSharpBasics
                 }   
             }
 
-
-      */
-
-
             string[] employes = { "zeeshan","haider","ali" };
             Console.WriteLine("Which Employe you want");
             string name = Console.ReadLine();
@@ -627,10 +623,152 @@ namespace CSharpBasics
             {
                 Console.WriteLine("employ is not found sorry");
             }
-        
+
+            // Lists
+            
+
+            List<int> marks = new List<int>();
+
+            List<decimal> balances = new List<decimal>();
+        */
+
+            int[] numbers = new int[5];
+
+            List<string> customers = new List<string>();
+
+            /*
+            customers.Add("Ali");
+            customers.Add("Adil");
+            customers.Add("Ahmed");
+            customers.Add("Abdullah");
+            customers.Add("Raouf");
+            customers.Add("Raza");
+          
+
+            Console.WriteLine("How to many customers do you want to store?");
+            int totalcustomers = Convert.ToInt32(Console.ReadLine());
+
+            for(int i=0; i<totalcustomers; i++)
+            {
+                customers.Add(Console.ReadLine());
+            }
+
+            Console.WriteLine("Provided List of Customers is below:");
+
+            foreach (string customerName in customers)
+            {
+                Console.WriteLine(customerName); 
+            }
+
+
+            List<Student> students = new List<Student>();
+
+            Student std1 = new Student();
+            std1.Id = 1;
+            std1.Name = "Islam";
+            std1.AgeInYears = 25;
+            std1.IsMarried = false;
+            std1.Fee = 20000m;
+
+            Student std2 = new Student();
+            std2.Id = 2;
+            std2.Name = "Haider";
+            std2.AgeInYears = 23;
+            std2.IsMarried = false;
+            std2.Fee = 20000m;
+
+            Student std3 = new Student();
+            std3.Id = 3;
+            std3.Name = "Zeeshan";
+            std3.AgeInYears = 26;
+            std3.IsMarried = true;
+            std3.Fee = 20000m;
+
+            students.Add(std1);
+            students.Add(std2);
+            students.Add(std3);
+
+
+            foreach (var std in students)
+            {
+                Console.WriteLine(std.Id);
+                Console.WriteLine(std.Name);
+                Console.WriteLine(std.AgeInYears);
+                Console.WriteLine(std.IsMarried);
+                Console.WriteLine(std.Fee);
+            }
+
+
+            List<Student> newStudents = new List<Student>()
+            {
+                new Student
+                {
+                    Id = 1,
+                    Name = "Raouf",
+                    AgeInYears = 25,
+                    IsMarried = true,
+                    Fee = 20000
+                },
+                new Student
+                {
+                    Id = 1,
+                    Name = "Raouf",
+                    AgeInYears = 25,
+                    IsMarried = true,
+                    Fee = 20000
+                },
+                new Student
+                {
+                    Id = 1,
+                    Name = "Raouf",
+                    AgeInYears = 25,
+                    IsMarried = true,
+                    Fee = 20000
+                }
+            };
+
+    
+            
+
+            Console.WriteLine("Maximum: {0}, Minimum: {1}, Total Items: {2}",_numbers.Max(), _numbers.Min(),_numbers.Count());
+
+            _numbers.Sort();
+
+            foreach (int num in _numbers)
+            {
+                Console.WriteLine(num);
+            }
+
+            List<int> _numbers = new List<int>();
+            _numbers.Add(63);
+            _numbers.Add(36);
+            _numbers.Add(50);
+            _numbers.Add(51);
+            _numbers.Add(52);
+            _numbers.Add(53);
+
+
+            _numbers.Remove(36);
+
+            _numbers.RemoveRange(0, 2);
+
+            foreach (int num in _numbers)
+            {
+                Console.WriteLine(num);
+            }
+         */
+
+            Console.WriteLine("Please enter first Number :");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter first Number :");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+            string opp = Console.ReadLine();
 
 
 
+            MyMath myMath = new MyMath();
+
+            Console.WriteLine("Result {0}",myMath.Caculation(firstNumber,secondNumber,opp));
 
 
             Console.ReadKey();
